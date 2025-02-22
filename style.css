@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Montserrat";
+}
+body {
+    background: url("https: //raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19px/bg.jpg");
+}
