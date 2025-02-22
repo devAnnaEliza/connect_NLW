@@ -22,9 +22,15 @@ const getUser = (userData) => {
     })
 }
 
+const getTotalSubscribers = (userData) => {
+    const subs = users.filter((user) => {
+        return user.refBy == userData.ref
+    })
+}
+
 const showInvite = (userData) => {
     app.innerHTML = `
-    <input type="text" id="link" value="https://evento.com" disabled>
+    <input type="text" id="link" value="https://evento.com?ref=${userData.ref}" disabled>
 
     <div id="stats">
         <h4>
